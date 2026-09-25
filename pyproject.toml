@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultrasonic-tof-calibration"
+version = "0.1.0"
+description = "Calibration-constrained ultrasonic ToF correction for FMC/TFM: a 2D k-Wave pilot"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Xubow-creat"}]
+keywords = ["ultrasound", "FMC", "TFM", "time of flight", "non-destructive testing"]
+dependencies = [
+  "k-Wave-python==0.6.3rc1",
+  "numpy>=1.22,<2.3",
+  "scipy>=1.15,<1.16",
+]
+
+[project.scripts]
+tof-calibration-pilot = "tof_calibration_pilot:main"
+
+[project.urls]
+Repository = "https://github.com/Xubow-creat/ultrasonic-tof-calibration"
+
+[tool.setuptools]
+py-modules = ["tof_calibration_pilot"]

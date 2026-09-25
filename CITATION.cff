@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this research pilot, please cite the repository version."
+title: "Ultrasonic ToF Calibration for FMC/TFM"
+authors:
+  - name: Xubow-creat
+version: 0.1.0
+date-released: 2026-09-25
+url: https://github.com/Xubow-creat/ultrasonic-tof-calibration
+license: MIT

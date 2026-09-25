@@ -1,0 +1,99 @@
+{
+  "scope": "2D acoustic k-Wave, reference-subtracted FMC; diagnostic pilot only",
+  "config": {
+    "dx_mm": 0.12,
+    "nx": 156,
+    "nz": 132,
+    "n_elements": 8,
+    "pitch_mm": 0.72,
+    "source_z_mm": 1.8,
+    "layer_bottom_mm": 4.8,
+    "layer_speed_m_s": 4500.0,
+    "bulk_speed_m_s": 5900.0,
+    "layer_density": 7400.0,
+    "bulk_density": 7850.0,
+    "lens_delta_m_s": -1200.0,
+    "lens_center_mm": 1.6,
+    "lens_width_mm": 1.8,
+    "pulse_mhz": 2.2,
+    "source_time_us": 0.65,
+    "t_end_us": 6.5,
+    "pml_cells": 10,
+    "inclusion_sigma_mm": 0.18,
+    "inclusion_strength": 0.35
+  },
+  "assumed_lens_center_mm": 1.6,
+  "assumed_lens_width_mm": 2.7,
+  "calibrators_mm": [
+    [
+      -1.8,
+      8.0
+    ],
+    [
+      1.8,
+      10.0
+    ]
+  ],
+  "held_out_target_mm": [
+    1.1,
+    11.4
+  ],
+  "layered_fit": {
+    "speed_m_s": 3500.0000000000055,
+    "lens_delta_m_s": 0.0,
+    "lens_center_mm": 1.6,
+    "offset_us": 0.5567845266015213,
+    "calibration_rms_us": 0.10922861997322114,
+    "n_arrivals": 72
+  },
+  "global_fit": {
+    "speed_m_s": 5361.167712044456,
+    "lens_delta_m_s": 0.0,
+    "lens_center_mm": 1.6,
+    "offset_us": 1.0263296476719825,
+    "calibration_rms_us": 0.1122971227575912,
+    "n_arrivals": 72
+  },
+  "lens_fit": {
+    "speed_m_s": 4851.981548082213,
+    "lens_delta_m_s": -1560.25948996177,
+    "lens_center_mm": 1.8580451543898426,
+    "offset_us": 0.6418960814299175,
+    "calibration_rms_us": 0.012387550274573972,
+    "n_arrivals": 72
+  },
+  "imaging": {
+    "nominal": {
+      "peak_x_mm": -1.6999999999999984,
+      "peak_z_mm": 13.199999999999982,
+      "center_error_mm": 3.328663395418636,
+      "peak_amplitude": 451499425792.0
+    },
+    "global_calibrated": {
+      "peak_x_mm": -1.4999999999999982,
+      "peak_z_mm": 11.099999999999989,
+      "center_error_mm": 2.61725046566048,
+      "peak_amplitude": 433077256192.0
+    },
+    "layered_calibrated": {
+      "peak_x_mm": -1.299999999999998,
+      "peak_z_mm": 11.399999999999988,
+      "center_error_mm": 2.399999999999998,
+      "peak_amplitude": 435077382144.0
+    },
+    "lens_calibrated": {
+      "peak_x_mm": 1.1000000000000045,
+      "peak_z_mm": 11.399999999999988,
+      "center_error_mm": 1.3203721447146771e-14,
+      "peak_amplitude": 509287268352.0
+    },
+    "lens_true_speed_assumed_shape": {
+      "peak_x_mm": 0.5000000000000031,
+      "peak_z_mm": 11.299999999999988,
+      "center_error_mm": 0.6082762530298209,
+      "peak_amplitude": 497765842944.0
+    }
+  },
+  "lens_center_fitted": true,
+  "wall_seconds": 16.35
+}
